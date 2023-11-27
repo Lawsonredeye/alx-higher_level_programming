@@ -1,4 +1,2 @@
 #!/bin/bash
-
-export PYCODE="./main.py"
-$PYCODE
+export PYFILE="./main.py" && $PYFILE
