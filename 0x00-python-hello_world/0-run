@@ -1,2 +1,3 @@
 #!/bin/bash
-export PYFILE="./main.py" && $PYFILE
+export PYFILE="./main.py"
+$PYFILE
