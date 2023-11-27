@@ -1,0 +1,4 @@
+#!/bin/bash
+
+export PYCODE="./main.py"
+$PYCODE
