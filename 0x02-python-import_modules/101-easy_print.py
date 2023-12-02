@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 import os
-os.write("#pythoniscool\n")
+os.write(1, b"#pythoniscool\n")
