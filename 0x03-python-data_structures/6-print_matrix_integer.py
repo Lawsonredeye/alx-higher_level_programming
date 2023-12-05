@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
-    if not matrix:
+    mat = matrix
+    if not mat:
         return None
-    for i in range(len(matrix)):
-        print(" ".join("{:d}".format(matrix[i][j]) for j in range(len(matrix[i]))))
+    for i in range(len(mat)):
+        print(" ".join("{:d}".format(mat[i][j]) for j in range(len(mat[i]))))
