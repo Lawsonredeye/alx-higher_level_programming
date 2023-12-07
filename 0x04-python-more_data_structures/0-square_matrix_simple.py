@@ -1,9 +1,4 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    new_matrix = []
-    for i in matrix:
-        new_sublist = []
-        for j in i:
-            new_sublist.append(j**2)
-        new_matrix.append(new_sublist)
+    new_matrix = [[j**2 for j in i] for i in matrix]
     return new_matrix
