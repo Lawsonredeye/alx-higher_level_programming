@@ -28,12 +28,16 @@ This would actually return the type of exception error that was raised based on 
 
 > ***Syntax:***
 
-`try:
+```
+{
+try:
     # Some Code
 except:
     # Executed if error in the
     # try block
 else:
-    # execute if no exception`
+    # execute if no exception
+}
+```
 
- 
+> Tasks:
