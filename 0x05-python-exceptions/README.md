@@ -11,11 +11,13 @@ Standard exception names are built-in identifiers (not reserved keywords).
 Try and except is used for handling errors which changes the normal flow of the program and the except handles errors whenever an error occured in the try block.
 
 > Syntax
-```try:
+```
+try:
     # Some Code
 except:
     # Executed if error in the
-    # try block```
+    # try block
+```
 
 To know what kind of exception to use or you'll encounter, you can use the following statement with the except statement:
 
