@@ -11,16 +11,18 @@ Standard exception names are built-in identifiers (not reserved keywords).
 Try and except is used for handling errors which changes the normal flow of the program and the except handles errors whenever an error occured in the try block.
 
 > Syntax
-`try:
+```try:
     # Some Code
 except:
     # Executed if error in the
-    # try block`
+    # try block```
 
 To know what kind of exception to use or you'll encounter, you can use the following statement with the except statement:
 
-` except Exception as e:
-	print("The error is: ",e)`
+```
+ except Exception as e:
+	print("The error is: ",e)
+```
 
 This would actually return the type of exception error that was raised based on the inputs being passed.
 
@@ -29,7 +31,6 @@ This would actually return the type of exception error that was raised based on 
 > ***Syntax:***
 
 ```
-{
 try:
     # Some Code
 except:
@@ -37,7 +38,6 @@ except:
     # try block
 else:
     # execute if no exception
-}
 ```
 
 ## Tasks:
@@ -72,7 +72,7 @@ You are not allowed to use type()
 
 2. Print and count integers
 
-*** Write a function that prints the first x elements of a list and only integers.**
+**Write a function that prints the first x elements of a list and only integers.**
 
 Prototype: def safe_print_list_integers(my_list=[], x=0):
 my_list can contain any type (integer, string, etc.)
