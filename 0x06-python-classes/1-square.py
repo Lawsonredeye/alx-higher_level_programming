@@ -13,11 +13,7 @@ class Square:
         """
         using the __init__ method to initialize the code
         
-        Attribute:
+        Attributes:
             size: just the size of the square
         """
         self.__size = size
-        """ this is a new instance
-        Attribute:
-            __size
-        """
