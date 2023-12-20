@@ -25,9 +25,9 @@ class Square:
             self.__size = size
     def area(self):
         """
-        using the __init__ method to initialize the code
+        returns the current square area
         Attributes:
-            size: just the size of the square
+            No attributes assigned
         """
 
         return self.__size * self.__size
