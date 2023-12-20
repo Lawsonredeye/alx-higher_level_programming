@@ -17,3 +17,7 @@ class Square:
             size: just the size of the square
         """
         self.__size = size
+        """ this is a new instance
+        Attribute:
+            __size
+        """
