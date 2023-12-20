@@ -9,7 +9,6 @@ class Square:
         Attributes:
             size
     """
-
     def __init__(self, size):
         """
         using the __init__ method to initialize the code
