@@ -9,6 +9,6 @@ class Square:
         """using the __init__ method to initialize the code
         
         Args:
-            param1 (size): just the size of the square on the private mode
+            size (int): just the size of the square on the private mode
         """
         self.__size = size
