@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 """class Square that defines a square by: (based on 0-square.py)
-
 """
+
+
 class Square:
     """class that just pass when called and accessed
-    Attributes:
+        Attributes:
         No Attributes
     """
     def __init__(self, size):
