@@ -7,7 +7,7 @@ class Square that defines a square by: (based on 1-square.py)
 class Square:
     """
     class that just pass when called and accessed
-    
+
     Attributes:
         __size: size of the defined area
     """
@@ -15,10 +15,10 @@ class Square:
     def __init__(self, size=0):
         """
         using the __init__ method to initialize the code
-        
+
         Attributes:
             size: just the size of the square
-        
+
         Raises:
             TypeError: If something other than an int is passed
             ValueError: If the size is less than zero
@@ -29,6 +29,7 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = size
+
     def area(self):
         """
         returns the current square area
@@ -36,19 +37,19 @@ class Square:
             No attributes assigned
         """
         return self.__size * self.__size
-    
+
     @property
     def size(self):
         """
         gets the size of the __size
-        
+
         Args:
             __size: size to be returned
         Return:
             self.__size
         """
         return self.__size
-    
+
     @size.setter
     def size(self, value):
         """
@@ -57,12 +58,12 @@ class Square:
         Args:
             __size (int): integer
             value: sets the self.__size to itself
-        
+
         Raises:
             TypeError: If something other than an int is passed
             ValueError: If the size is less than zero
         """
-    
+
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         elif value < 0:
