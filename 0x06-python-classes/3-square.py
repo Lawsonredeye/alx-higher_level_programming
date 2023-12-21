@@ -8,7 +8,7 @@ class Square:
     """
     class that just pass when called and accessed
     Attributes:
-        size
+        __size: size of the defined area
     """
 
     def __init__(self, size=0):
@@ -23,6 +23,7 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = size
+
     def area(self):
         """
         returns the current square area
