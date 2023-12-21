@@ -57,6 +57,10 @@ class Square:
         Args:
             __size (int): integer
             value: sets the self.__size to itself
+        
+        Raises:
+            TypeError: If something other than an int is passed
+            ValueError: If the size is less than zero
         """
     
         if not isinstance(value, int):
