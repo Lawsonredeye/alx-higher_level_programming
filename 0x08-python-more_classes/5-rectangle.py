@@ -112,12 +112,10 @@ class Rectangle:
             new string (str): the non empty string
         """
 
-        result = ""
-        for i in range(self.__height):
-            result += "#"*self.__width
-            if i != self.__width - 1:
-                result += "\n"
-        return result
+        if self.width == 0 or self.height == 0:
+            return ""
+        else:
+            return ("#"*self.width + "\n")*(self.height - 1) + "#"*self.width
 
     def __repr__(self):
         """
