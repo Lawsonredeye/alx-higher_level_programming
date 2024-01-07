@@ -118,9 +118,10 @@ class Rectangle:
             if i != self.__width - 1:
                 result += "\n"
         return result
-    
+
     def __repr__(self):
         """
-        method that returns 
+        method that returns
         """
+
         return f"Rectangle({self.__width}, {self.__height})"
