@@ -10,7 +10,7 @@ def print_square(size):
     function that prints a square with the character #
     Args:
         size: must be an integer to specified the size
-    
+
     Raises:
         TypeError: raises an exception
         ValueError: raises an exception
