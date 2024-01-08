@@ -12,5 +12,24 @@ This is an example text file in reStructuredText format.  First import
     My name is Lawson boyle
     >>> say_my_name("peter", "34")
     My name is peter 34
-    >>> say_my_name("36", "36")
-    My name is 36 36
+    >>> say_my_name("peter", 34)
+    Traceback (most recent call last):
+        ...
+    TypeError: last_name must be a string
+    >>> say_my_name(34, 34)
+    Traceback (most recent call last):
+        ...
+    TypeError: first_name must be a string
+    >>> say_my_name(34, "")
+    Traceback (most recent call last):
+        ...
+    TypeError: first_name must be a string
+    >>> say_my_name({}, [])
+    Traceback (most recent call last):
+        ...
+    TypeError: first_name must be a string
+    >>> say_my_name({},)
+    Traceback (most recent call last):
+        ...
+    TypeError: first_name must be a string
+    >>> 

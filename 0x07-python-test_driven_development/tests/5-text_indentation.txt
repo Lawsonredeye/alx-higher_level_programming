@@ -1,13 +1,18 @@
     >>> text_indentation = __import__("5-text_indentation").text_indentation
-    >>> text_indentation("this. is where we: are getting a run\nfor.our money")
-    this
-
-    is where we
-
-    are getting a run
-    for
-
-    our money>>> text_indentation("bullish to the. moon")
-    bullish to the
-
-    moon>>>
+    >>> text_indentation(5)
+    Traceback (most recent call last):
+        ...
+    TypeError: text must be a string
+    >>> text_indentation(5.5)
+    Traceback (most recent call last):
+        ...
+    TypeError: text must be a string
+    >>> text_indentation(-10)
+    Traceback (most recent call last):
+        ...
+    TypeError: text must be a string
+    >>> text_indentation([])
+    Traceback (most recent call last):
+        ...
+    TypeError: text must be a string
+    >>>

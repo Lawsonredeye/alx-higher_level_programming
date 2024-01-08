@@ -19,3 +19,23 @@ This is an example text file in reStructuredText format.  First import
     109
     >>> add_integer(-2.4, 111.4)
     109
+    >>> add_integer(2, "str")
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
+    >>> add_integer(35, {})
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
+    >>> add_integer(35, [])
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
+    >>> add_integer(35, ())
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
+    >>> add_integer(35, (45,))
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
