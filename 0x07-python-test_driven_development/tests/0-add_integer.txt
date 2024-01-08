@@ -43,4 +43,24 @@ This is an example text file in reStructuredText format.  First import
     Traceback (most recent call last):
         ...
     TypeError: add_integer() missing 1 required positional argument: 'a'
-    >>> 
+    >>> x = float("nan")
+    >>> add_integer(x)
+    Traceback (most recent call last):
+        ...
+    ValueError: cannot convert float NaN to integer
+    >>> add_integer(1.7976931348623157e+308*2)
+    Traceback (most recent call last):
+        ...
+    OverflowError: cannot convert float infinity to integer
+    >>> add_integer(,)
+    Traceback (most recent call last):
+        ...
+        add_integer(,)
+                    ^
+    SyntaxError: invalid syntax
+    >>> add_integer( , )
+    Traceback (most recent call last):
+        ...
+        add_integer( , )
+                    ^
+    SyntaxError: invalid syntax
