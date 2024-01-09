@@ -11,7 +11,7 @@ class BaseGeometry:
 
     def area(self):
         """
-        that raises an Exception with the 
+        that raises an Exception with the
         message area() is not implemented
 
         Raises:
