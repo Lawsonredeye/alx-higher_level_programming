@@ -5,6 +5,11 @@ Write a class BaseGeometry (based on 6-base_geometry.py).
 
 
 class BaseGeometry:
+    """
+    Parent class with several functionalities
+    as well as methods
+    """
+
     def area(self):
         """
         that raises an Exception with the
