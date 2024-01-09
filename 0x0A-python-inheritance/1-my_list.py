@@ -17,7 +17,7 @@ class MyList(list):
         initialize using the super().__init__() function
         """
         super().__init__()
-    
+
     def print_sorted(self):
         """
         prints the sorted value to the stdout output and
