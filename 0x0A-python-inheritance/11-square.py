@@ -89,7 +89,7 @@ class Square(Rectangle):
         """
         returns width * height
         """
-        return self.__size * self.__size
+        print(self.__size * self.__size)
 
     def __str__(self):
         """
