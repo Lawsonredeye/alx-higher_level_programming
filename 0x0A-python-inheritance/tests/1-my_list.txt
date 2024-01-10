@@ -19,4 +19,38 @@ SyntaxError: invalid syntax
 Traceback (most recent call last):
     ...
 TypeError: '<' not supported between instances of 'dict' and 'int'
+>>> a.append(2)
+>>> a.append(5)
+>>> a.append("str")
+>>> a.append( )
+Traceback (most recent call last):
+    ...
+TypeError: list.append() takes exactly one argument (0 given)
+>>> a.append( , )
+Traceback (most recent call last):
+    ...
+    a.append( , )
+              ^
+SyntaxError: invalid syntax
+>>> a.append(" " , )
+>>> a.append(" " , 1526 )
+Traceback (most recent call last):
+    ...
+TypeError: list.append() takes exactly one argument (2 given)
+>>> a.append(" " , 1526 , {})
+Traceback (most recent call last):
+    ...
+TypeError: list.append() takes exactly one argument (3 given)
+>>> a.append([ ])
+>>> a.print_sorted()
+Traceback (most recent call last):
+    ...
+TypeError: '<' not supported between instances of 'dict' and 'int'
+>>> a.clear()
+>>> a.append("")
+>>> a.append(45)
+>>> a.print_sorted()
+Traceback (most recent call last):
+    ...
+TypeError: '<' not supported between instances of 'int' and 'str'
 >>> 
