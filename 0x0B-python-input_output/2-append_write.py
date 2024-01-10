@@ -13,6 +13,8 @@ def append_write(filename="", text=""):
         filename (str): path to the file to be written to
         text (str): string to be appended into the existing file
     """
-    with open(filename, "a", encoding="UTF-8") as f:
+    with open(filename, "a+", encoding="UTF-8") as f:
         write_data = f.write(text)
         return write_data
+nb_characters_added = append_write("file_append.txt", "This School is so cool!\n")
+print(nb_characters_added)
