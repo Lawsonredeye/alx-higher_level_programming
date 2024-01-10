@@ -6,7 +6,7 @@ This module contains a function that reads a file
 
 def read_file(filename=""):
     """
-    unction that reads a text file (UTF8)
+    function that reads a text file (UTF8)
     and prints it to stdout using the print function
 
     Args:
