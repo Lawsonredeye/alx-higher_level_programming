@@ -1,34 +1,23 @@
 #!/usr/bin/python3
+"""
+This contains a function that turns a json file into an
+object data using the json libray as an aid
+"""
+
 
 import json
 
+
 def load_from_json_file(filename):
-    with open(filename, encoding="UTF-8") as f:
+    """
+    This creates an object from a json file using the json module
+    it takes the file name and reads it, retrieves it data and store
+    the value in a container and return the converted object data
+
+    Args:
+        my_obj (any): python object to be dumped as a json file
+        filename (str): path to desired file to store the json dump
+    """
+    with open(filename, "r", encoding="UTF-8") as f:
         read_data = f.read()
-    return json.load(read_data)
-
-filename = "my_list.json"
-my_list = load_from_json_file(filename)
-print(my_list)
-print(type(my_list))
-
-filename = "my_dict.json"
-my_dict = load_from_json_file(filename)
-print(my_dict)
-print(type(my_dict))
-
-try:
-    filename = "my_set_doesnt_exist.json"
-    my_set = load_from_json_file(filename)
-    print(my_set)
-    print(type(my_set))
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))
-
-try:
-    filename = "my_fake.json"
-    my_fake = load_from_json_file(filename)
-    print(my_fake)
-    print(type(my_fake))
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))
+    return json.loads(read_data)
