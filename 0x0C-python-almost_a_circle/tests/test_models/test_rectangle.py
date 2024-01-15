@@ -47,3 +47,39 @@ class TestRectangle(unittest.TestCase):
         checks is both are the same
         """
         self.assertIsNot(self.a, self.b)
+        self.assertIsNot(self.b, self.a)
+
+    def test_isinstance(self):
+        """
+        Checks if the instance is correct
+        """
+        self.assertIsNotNone(self.a, int)
+        self.assertIsNotNone(self.b, int)
+        self.assertIsNotNone(self.b, str)
+        self.assertIsNotNone(self.a, str)
+        self.assertIsNotNone(self.a, tuple)
+        self.assertIsNotNone(self.a, tuple)
+    
+    def test_isNotNone(self):
+        """
+        Checks if its not none
+        """
+        law_test = Rectangle(12, 7)
+        self.assertIsNotNone(law_test)
+    
+    def test_error_raised(self):
+        with self.assertRaises(ValueError):
+            caseA = Rectangle(14, 54, -1, 0)
+        with self.assertRaises(ValueError):
+            caseA = Rectangle(14, 54, 2, -1)
+        with self.assertRaises(ValueError):
+            caseA = Rectangle(14, 32, 12, -100)
+        with self.assertRaises(ValueError):
+            caseA = Rectangle(14, 54, -1, -1)
+
+    def test_missing_arguments(self):
+        """
+        Test for if no parameter was passed as an object
+        """
+        with self.assertRaises(TypeError):
+            CaseA = Rectangle()
