@@ -184,3 +184,12 @@ class Rectangle(Base):
         rect = "#"*self.__width
         for i in range(self.__height):
             print(rect.rjust(self.__y + self.__width))
+
+    def __str__(self):
+        """
+        The str method that just prints a specific output when instanciated
+        """
+        x = self.x
+        y = self.y
+        width = self.width
+        return f"[Rectangle] ({self.id}) {x}/{y} - {width}/{self.height}"
