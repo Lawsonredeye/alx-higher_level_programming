@@ -17,6 +17,14 @@ class Base:
     __nb_objects = 0
 
     def __init__(self, id=None):
+        """
+        This function initializes the class and it can take an argument
+        or no argument, with its default argument being NONE and its also
+        an integer.
+
+        Args:
+            id (int): Takes int as an argument
+        """
         if id is not None:
             self.id = id
         else:
