@@ -76,6 +76,10 @@ class Rectangle(Base):
         sets the width from the default value
         or from its previous value to a new value
         """
+        if not isinstance(width, int):
+            raise TypeError("width must be an integer")
+        elif width < 0:
+            raise ValueError("width must be an integer")
         self.__width = width
 
     @height.setter
