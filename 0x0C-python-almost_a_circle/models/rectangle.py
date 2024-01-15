@@ -170,3 +170,12 @@ class Rectangle(Base):
         multiplying height * width and returning the multiplied value
         """
         return self.__height * self.__width
+    
+    def display(self):
+        """
+        Prints the rectangle based on the length of the height
+        and the width size
+        """
+        for i in range(self.height):
+            print("#"*self.width)
+
