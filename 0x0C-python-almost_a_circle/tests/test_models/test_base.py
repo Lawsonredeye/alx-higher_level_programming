@@ -20,12 +20,13 @@ class TestBase(unittest.TestCase):
         """
         self.a = Base()
         self.b = Base()
+        self.c = Base(15)
 
     def test_isTrue(self):
         """
         checks if the expression is actually True
         """
-        self.assertTrue(True)
+        self.assertTrue(self.a)
     
     def test_isEquals(self):
         """
@@ -33,5 +34,12 @@ class TestBase(unittest.TestCase):
         being passed using the setUp() method to initialize
         the test_isEquals method
         """
-        self.assertEqual(self.a.id, 1)
-        self.assertEqual(self.b.id, 2)
+        self.assertEqual(self.a.id, 3)
+        self.assertEqual(self.b.id, 4)
+        self.assertEqual(self.c.id, 15)
+
+    def test_IsNot(self):
+        """
+        Checks if both objects is the same
+        """
+        self.assertIsNot(self.a, self.b)
