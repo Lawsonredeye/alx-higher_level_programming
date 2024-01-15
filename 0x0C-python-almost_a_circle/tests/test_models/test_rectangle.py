@@ -59,14 +59,14 @@ class TestRectangle(unittest.TestCase):
         self.assertIsNotNone(self.a, str)
         self.assertIsNotNone(self.a, tuple)
         self.assertIsNotNone(self.a, tuple)
-    
+
     def test_isNotNone(self):
         """
         Checks if its not none
         """
         law_test = Rectangle(12, 7)
         self.assertIsNotNone(law_test)
-    
+
     def test_error_raised(self):
         with self.assertRaises(ValueError):
             caseA = Rectangle(14, 54, -1, 0)
