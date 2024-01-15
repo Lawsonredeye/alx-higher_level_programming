@@ -7,6 +7,7 @@ This is a unittest modules used for testing the base.py module
 import unittest
 from models.base import Base
 
+
 class TestBase(unittest.TestCase):
     """
     This is a test class for testing the base class to see
@@ -27,7 +28,7 @@ class TestBase(unittest.TestCase):
         checks if the expression is actually True
         """
         self.assertTrue(self.a)
-    
+
     def test_isEquals(self):
         """
         checks if the self.a.id is equal to the output
