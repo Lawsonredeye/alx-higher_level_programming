@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 """
 Module which depends on the base.py module to be able to carry out its
-operation and also imports methods from the base.py 
+operation and also imports methods from the base.py
 """
 
 
 from models.base import Base
+
 
 class Rectangle(Base):
     """
@@ -75,33 +76,72 @@ class Rectangle(Base):
         """
         sets the width from the default value
         or from its previous value to a new value
+
+        Args:
+            width (int): recieves an integer as a parameter
+
+        Raises:
+            TypeError: if the width is not an integer
+            ValueError: if the width is less than ZERO
         """
         if not isinstance(width, int):
             raise TypeError("width must be an integer")
         elif width < 0:
-            raise ValueError("width must be an integer")
+            raise ValueError("width must be > 0")
         self.__width = width
 
     @height.setter
-    def height(self, width):
+    def height(self, height):
         """
         Resets the height from the default value
         or from its previous value to a new value
+
+        Args:
+            height (int): recieves an integer as a parameter
+
+        Raises:
+            TypeError: if the height is not an integer
+            ValueError: if the height is less than ZERO
         """
-        self.__height = width
+        if not isinstance(height, int):
+            raise TypeError("height must be an integer")
+        elif height < 0:
+            raise ValueError("height must be > 0")
+            self.__height = height
 
     @y.setter
-    def y(self, width):
+    def y(self, y):
         """
         Resets the y from the default value
         or from its previous value to a new value
+
+        Args:
+            y (int): recieves an integer as a parameter
+
+        Raises:
+            ValueError: if the width is less than ZERO
         """
-        self.__y = width
+        if not isinstance(y, int):
+            raise TypeError("y must be an integer")
+        elif y < 0:
+            raise ValueError("y must be >= 0")
+        else:
+            self.__y = y
 
     @x.setter
-    def x(self, width):
+    def x(self, x):
         """
         Change the value of x from the default value
         or from its previous value to a new value
+
+        Args:
+            y (int): recieves an integer as a parameter
+
+        Raises:
+            ValueError: if the width is less than ZERO
         """
-        self.__y = width
+        if not isinstance(x, int):
+            raise TypeError("x must be an integer")
+        if x < 0:
+            raise ValueError("x must be >= 0")
+        self.__x = x
