@@ -49,12 +49,14 @@ class Rectangle(Base):
             raise TypeError("x must be an integer")
         elif x < 0:
             raise ValueError("x must be >= 0")
-        else: self.__x = x
+        else:
+            self.__x = x
         if not isinstance(y, int):
             raise TypeError("y must be an integer")
         elif y < 0:
             raise ValueError("y must be >= 0")
-        else: self.__y = y
+        else:
+            self.__y = y
         super().__init__(id)
 
     @property
@@ -170,12 +172,15 @@ class Rectangle(Base):
         multiplying height * width and returning the multiplied value
         """
         return self.__height * self.__width
-    
+
     def display(self):
         """
         Prints the rectangle based on the length of the height
         and the width size
         """
-        for i in range(self.height):
-            print("#"*self.width)
-
+        if self.__x != 0:
+            for j in range(self.__x):
+                print()
+        rect = "#"*self.__width
+        for i in range(self.__height):
+            print(rect.rjust(self.__y + self.__width))
