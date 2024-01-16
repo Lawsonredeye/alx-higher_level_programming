@@ -23,7 +23,5 @@ class Square(Rectangle):
     def __str__(self):
         """
         Returns a string in a specific when being called or printed out
-        example:
-        >>> import 
         """
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"
