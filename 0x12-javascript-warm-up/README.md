@@ -52,9 +52,9 @@ The members of an array can be accessed using the name of the variable together 
 
 This can be written just like it is written in C language where we can write multi-line comments and single line comments.
 Multiline comments:
-/_
+\\_
 Everything in between is a comment.
-_/
+\\_
 
 single line comment:
 // this is a comment
