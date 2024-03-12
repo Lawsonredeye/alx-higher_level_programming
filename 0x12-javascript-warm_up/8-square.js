@@ -6,7 +6,7 @@
  * else create a loop to iterate through the size of the square and use the .repeat() method to print the string 'x' * size.
  */
 const process = require('process');
-const x = 'x';
+const x = 'X';
 if (Number(process.argv[2])) {
   const newNum = Number(process.argv[2]);
   for (let i = 0; i < newNum; i++) {
