@@ -6,7 +6,7 @@ class Square extends Square1 {
 //   }
 
   charPrint (c) {
-    if (c === 'C') {
+    if (c === 'C' && c !== undefined) {
       const shape = 'C';
       for (let i = 0; i < this.height; i++) {
         console.log(shape.repeat(this.width));
