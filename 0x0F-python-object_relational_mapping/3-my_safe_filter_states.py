@@ -41,8 +41,9 @@ def main():
         "SELECT * FROM states WHERE name = %s ORDER BY states.id ASC",
         (sys.argv[4],)
         )
-    print_data = data_cursor.fetchone()
-    print(print_data)
+    print_data = data_cursor.fetchall()
+    for row in print_data:
+        print(row)
     data_cursor.close()
     data.close()
 
