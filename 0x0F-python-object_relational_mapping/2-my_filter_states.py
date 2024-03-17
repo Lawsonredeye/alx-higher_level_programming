@@ -43,7 +43,7 @@ def main():
     # db_cursor.execute("SELECT * FROM states WHERE name = '{}'"
     #                   "ORDER BY states.id ASC".format(sys.argv[4]))
     query = ("SELECT * FROM states WHERE name = '{}' "
-             "ORDER BY states.id ASC".format(sys.argv[4]))
+             "ORDER BY states.id ASC".format(sys.argv[4],))
     db_cursor.execute(query)
     db_print = db_cursor.fetchall()
     for row in db_print:
