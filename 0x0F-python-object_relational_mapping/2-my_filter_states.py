@@ -40,8 +40,11 @@ def main():
                                  passwd=sys.argv[2],
                                  db=sys.argv[3])
     db_cursor = db_connect.cursor()
-    db_cursor.execute("SELECT * FROM states WHERE name = '{}'"
-                      "ORDER BY states.id ASC".format(sys.argv[4]))
+    # db_cursor.execute("SELECT * FROM states WHERE name = '{}'"
+    #                   "ORDER BY states.id ASC".format(sys.argv[4]))
+    query = ("SELECT * FROM states WHERE name = '{}' "
+             "ORDER BY states.id ASC".format(sys.argv[4]))
+    db_cursor.execute(query)
     db_print = db_cursor.fetchall()
     for row in db_print:
         print(row)
