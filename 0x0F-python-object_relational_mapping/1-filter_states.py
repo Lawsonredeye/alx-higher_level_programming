@@ -43,7 +43,7 @@ def main():
     db_connect.close()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     '''
     This checks if the script is
     running as main or also if its imported as a module into another module
