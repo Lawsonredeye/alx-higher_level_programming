@@ -16,7 +16,9 @@ def main():
     # create a cursor
     db_cursor = db.cursor()
     # execute the cursor
-    db_cursor.execute("SELECT * FROM cities ORDER BY cities.id ASC")
+    db_cursor.execute("select cities.id,cities.name,states.name "
+                      "from cities left join states "
+                      "on state_id = states.id order by cities.id asc")
     query_rows = db_cursor.fetchall()
     for row in query_rows:
         print(row)
