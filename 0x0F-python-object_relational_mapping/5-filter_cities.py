@@ -38,6 +38,7 @@ def main():
                         "WHERE states.name = %s "
                         "order by cities.id ASC", (sys.argv[4],))
     query_rows = data_cursor.fetchall()
+    # Extracting city names and joining them into a single string
     city_row = ', '.join(row[0] for row in query_rows)
     print(city_row)
     data.close()
