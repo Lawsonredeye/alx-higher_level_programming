@@ -11,8 +11,8 @@ if __name__ == "__main__":
     from sqlalchemy.orm import sessionmaker
 
     # create the engine
-    engine = create_engine(f"mysql://{sys.argv[1]}:"
-                           "{sys.argv[2]}/{sys.argv[3]}:3306")
+    engine = create_engine('mysql://{}:{}@localhost:3306/{}'.format(
+        sys.argv[1], sys.argv[2], sys.argv[3]))
     # create the session and bind it to the engine
     Session = sessionmaker(bind=engine)
     session = Session()
