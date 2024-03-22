@@ -14,8 +14,8 @@ if __name__ == "__main__":
         sys.argv[1], sys.argv[2], sys.argv[3]))
     Session = sessionmaker(bind=engine)
     session = Session()
-    query = session.query(State).filter_by(name=sys.argv[4],)
+    query = session.query(State).filter_by(name=sys.argv[4]).first()
     if query is not None:
-        print(f'{query.id}')
+        print(query.id)
     else:
         print('Not found')
