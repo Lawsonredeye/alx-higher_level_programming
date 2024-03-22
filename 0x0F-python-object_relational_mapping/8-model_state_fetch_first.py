@@ -19,5 +19,4 @@ if __name__ == "__main__":
     # fetch the data using session.query.filter
     result = session.query(State).first()
     # print result
-    if result is not None:
-        print(f"{result.id}: {result.name}")
+    print(f"{result.id}: {result.name}")
