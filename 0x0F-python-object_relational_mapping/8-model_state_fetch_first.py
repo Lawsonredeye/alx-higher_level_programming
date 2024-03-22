@@ -20,4 +20,5 @@ if __name__ == "__main__":
     result = session.query(State).first()
     # print result
     for r in result:
-        print(f"{r.id}: {r.name}")
+        if r is not None:
+            print(f"{r.id}: {r.name}")
