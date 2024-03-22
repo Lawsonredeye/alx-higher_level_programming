@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Script that connects toa database and prints its values
+Script that connects to a database and prints its values
 """
 
 
