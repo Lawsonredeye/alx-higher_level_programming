@@ -14,7 +14,7 @@ if __name__ == "__main__":
         try:
             obj = r.json()
             print(obj['id'])
-        except requests.exceptions.JSONDecodeError:
+        except requests.JSONDecodeError:
             print("None")
     else:
         print("None")
