@@ -16,3 +16,5 @@ if __name__ == "__main__":
             print(obj['id'])
         except requests.exceptions.JSONDecodeError:
             print("None")
+    else:
+        print("None")
