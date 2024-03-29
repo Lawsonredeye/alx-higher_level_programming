@@ -11,5 +11,8 @@ if __name__ == "__main__":
 
     r = requests.get(url, auth=(username, passwd))
     if r.status_code == 200:
-        obj = r.json()
-        print(obj['id'])
+        try:
+            obj = r.json()
+            print(obj['id'])
+        except requests.exceptions.JSONDecodeError:
+            print("None")
