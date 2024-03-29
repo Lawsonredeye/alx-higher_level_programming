@@ -3,7 +3,6 @@
 
 import requests
 import sys
-import json
 
 if __name__ == "__main__":
     try:
@@ -17,5 +16,5 @@ if __name__ == "__main__":
             print('No result')
         else:
             print(obj['id'], obj['name'])
-    except json.JSONDecodeError:
+    except requests.exceptions.JSONDecodeError:
         print('Not a valid JSON')
