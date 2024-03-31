@@ -13,4 +13,4 @@ import sys
 import requests
 
 if __name__ == "__main__":
-    r = requests.
+    r = requests.get('https://api.github.com/user', )
